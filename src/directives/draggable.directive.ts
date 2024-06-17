@@ -156,7 +156,7 @@ export class Draggable implements OnInit, OnDestroy {
 
             e.stopPropagation();
             this.onDragStart.emit(e);
-            this.ng2DragDropService.onDragStart.next();
+            this.ng2DragDropService.onDragStart.next(e);
 
             this.zone.runOutsideAngular(() => {
                 this.unbindDragListener = this.renderer.listen(this.el.nativeElement, 'drag', (dragEvent) => {
@@ -176,7 +176,7 @@ export class Draggable implements OnInit, OnDestroy {
     dragEnd(e) {
         this.unbindDragListeners();
         DomHelper.removeClass(this.el, this.dragClass);
-        this.ng2DragDropService.onDragEnd.next();
+        this.ng2DragDropService.onDragEnd.next(e);
         this.onDragEnd.emit(e);
         e.stopPropagation();
         e.preventDefault();
