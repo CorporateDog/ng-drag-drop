@@ -10,7 +10,8 @@
     "moduleResolution": "node",   
     "removeComments": false,
     "noImplicitAny": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "./dist/out-tsc",
   },
   "typeRoots": [
     "./node_modules/@types"
