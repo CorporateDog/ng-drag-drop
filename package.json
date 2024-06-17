@@ -1,5 +1,5 @@
 {
-  "name": "@loftware/ng-drag-drop",
+  "name": "@CorporateDog/ng-drag-drop",
   "version": "5.0.1",
   "description": "Drag & Drop for Angular - based on HTML5 with no external dependencies.",
   "main": "index.js",
@@ -22,6 +22,7 @@
     "Angular2",
     "Angular4",
     "Angular6",
+	"Angular17",
     "Angular",
     "drag",
     "drop",
